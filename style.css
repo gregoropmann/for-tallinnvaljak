@@ -1,0 +1,235 @@
+:root {
+            --sinilill-blue: #4F77AA;
+            --wheat-gold: #E5A93C;
+            --text-charcoal: #2C2A29;
+            --bg-light: #FAF8F5;
+        }
+
+        html, body {
+            overflow-x: hidden;
+            overflow-y: auto !important;
+            color: var(--text-charcoal);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            padding: 0;
+            margin: 0;
+            background: linear-gradient(rgba(250, 248, 245, 0.88), rgba(250, 248, 245, 0.88)), 
+                        url('./assets/pold.webp') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .wrapper {
+            padding: 20px;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        .container {
+            max-width: 650px;
+            margin: 40px auto 50px auto;
+            background: rgba(255, 255, 255, 0.96);
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            box-sizing: border-box;
+            backdrop-filter: blur(6px);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .badge-tag {
+            background: #FFF9E6;
+            color: #B27B00;
+            border: 1px solid #FFE0B2;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            color: var(--sinilill-blue);
+            margin: 0 0 10px 0;
+            font-size: 2.1rem;
+            font-weight: 800;
+            line-height: 1.25;
+        }
+
+        .hero-p {
+            font-size: 1.05rem;
+            color: #555;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        /* Enne / Pärast visual kast */
+        .comparison-box {
+            background: #F4F7FA;
+            border: 1px dashed var(--sinilill-blue);
+            border-radius: 12px;
+            padding: 16px;
+            text-align: center;
+            margin: 25px 0;
+            font-size: 0.9rem;
+        }
+
+        .comparison-old {
+            color: #888;
+            text-decoration: line-through;
+            word-break: break-all;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .comparison-arrow {
+            font-size: 1.1rem;
+            margin: 4px 0;
+            display: block;
+        }
+
+        .comparison-new {
+            color: var(--sinilill-blue);
+            font-weight: 800;
+            font-size: 1.15rem;
+            display: block;
+        }
+
+        /* Hinnakasti stiil */
+        .price-card {
+            background: linear-gradient(135deg, #ffffff, #fdfbf7);
+            border: 2px solid var(--wheat-gold);
+            border-radius: 16px;
+            padding: 25px;
+            text-align: center;
+            margin: 30px 0;
+            position: relative;
+            box-shadow: 0 6px 18px rgba(229, 169, 60, 0.12);
+        }
+
+        .price-card .amount {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: var(--text-charcoal);
+            margin: 10px 0;
+        }
+
+        .price-card .period {
+            font-size: 1rem;
+            color: #777;
+            font-weight: normal;
+        }
+
+        /* Töökindel HTML/CSS BMAC nupp */
+        .bmac-custom-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background-color: #21a1de;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 1.1rem;
+            padding: 14px 28px;
+            border-radius: 12px;
+            text-decoration: none;
+            box-shadow: 0 4px 14px rgba(33, 161, 222, 0.35);
+            transition: all 0.2s ease;
+            border: 2px solid #000000;
+            margin-top: 10px;
+        }
+
+        .bmac-custom-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(33, 161, 222, 0.45);
+            background-color: #1b8ec5;
+        }
+
+        .sub-btn-note {
+            font-size: 0.82rem;
+            color: #777;
+            margin-top: 12px;
+        }
+
+        /* Funktsioonide nimekiri */
+        .features {
+            margin: 35px 0;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 18px;
+        }
+
+        .feature-icon {
+            background: #E8F0FE;
+            color: var(--sinilill-blue);
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            margin-right: 15px;
+            flex-shrink: 0;
+            font-weight: bold;
+        }
+
+        .feature-text h3 {
+            margin: 0 0 4px 0;
+            font-size: 1.05rem;
+            color: var(--text-charcoal);
+        }
+
+        .feature-text p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #666;
+            line-height: 1.4;
+        }
+
+        /* KKK osa */
+        h2 {
+            font-size: 1.3rem;
+            color: var(--text-charcoal);
+            margin-top: 40px;
+            border-left: 4px solid var(--wheat-gold);
+            padding-left: 12px;
+            font-weight: 700;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .faq-item h4 {
+            margin: 0 0 6px 0;
+            font-size: 1rem;
+            color: var(--text-charcoal);
+        }
+
+        .faq-item p {
+            margin: 0;
+            font-size: 0.92rem;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        footer {
+            margin-top: 45px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #888;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+
+        footer a {
+            color: var(--sinilill-blue);
+            text-decoration: none;
+        }
